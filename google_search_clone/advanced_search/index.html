@@ -2,15 +2,147 @@
 <html lang="en">
     <head>
         <title>Google Advanced Search</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <style>
+            .nav-link:hover {
+                text-decoration: underline;
+            }
+            .navbar {
+                padding: 0;
+            }
+            .navbar > div {
+                background-color:#F1F1F1;
+                margin:0;
+                padding: 10px 0px 10px 20px;
+            }
+            #adsc_title {
+                color:red;
+                padding: 25px 35px;
+                font-size: 20px;
+            }
+            .form-flex-row {
+                display: flex;
+            }
+            .form-label,.form-input,.form-todo {
+                padding: 10px;
+                flex-shrink: 0;
+            }
+            .form-input {
+                flex-grow: 1;
+                max-width: 570px;
+                min-width: 200px;
+            }
+            .form-input input, .form-sub-input input{
+                width: 100%;
+            }
+            .form-sub-input {
+                flex-grow: 1;
+                flex-shrink: 1;                
+                width: 50px;
+            }
+            .form-sub-span {
+                text-align: center;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            @media screen and (max-width: 800px) {
+                .form-todo {
+                    display: none;
+                }
 
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        </style>
     </head>
     <body>
-        <form action="https://google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
-        </form>
+        <header>
+            <nav class="navbar navbar-expand-sm">
+                <div class="container-fluid">
+                    <img src="../assets/img/google.png" alt="Google Advanced Search" height="33" width="92">
+                    <ul class="navbar-nav">
+                        <li class="nav-item" title="Go to Google Home">
+                            <a class="nav-link text-dark" href="../index.html">Go Back</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="adsc_title" class="container-fluid">
+                <p>Advanced Search</p>
+            </div>
+        </header>
+        <main>
+            <div class="container-fluid">
+                <form action="" method="GET">
+                    <div class="form-flex-row">
+                        <div class="form-label">
+                            <label for="1">all these words: </label>
+                        </div>
+                        <div class="form-input">
+                            <input type="text" name="1">
+                        </div>
+                        <div class="form-todo">
+                            <span>Type the important words: tri-colour rat terrier</span>
+                        </div>
+                    </div>
+                    <div class="form-flex-row">
+                        <div class="form-label">
+                            <label for="1">all these words: </label>
+                        </div>
+                        <div class="form-input">
+                            <input type="text" name="1">
+                        </div>
+                        <div class="form-todo">
+                            <span>Type the important words: tri-colour rat terrier</span>
+                        </div>
+                    </div>
+                    <div class="form-flex-row">
+                        <div class="form-label">
+                            <label for="1">all these words: </label>
+                        </div>
+                        <div class="form-input">
+                            <input type="text" name="1">
+                        </div>
+                        <div class="form-todo">
+                            <span>Type the important words: tri-colour rat terrier</span>
+                        </div>
+                    </div>
+                    <div class="form-flex-row">
+                        <div class="form-label">
+                            <label for="1">all these words: </label>
+                        </div>
+                        <div class="form-input">
+                            <input type="text" name="1">
+                        </div>
+                        <div class="form-todo">
+                            <span>Type the important words: tri-colour rat terrier</span>
+                        </div>
+                    </div>
+                    <div class="form-flex-row">
+                        <div class="form-label">
+                            <label for="1">all these words: </label>
+                        </div>
+                        <div class="form-flex-row form-input">
+                            <div class="form-sub-input">
+                                <input type="text" name="1">
+                            </div>
+                            <div class="form-sub-span">
+                                <span>to</span>
+                            </div>
+                            <div class="form-sub-input">
+                                <input type="text" name="1">
+                            </div>
+                        </div>
+                        <div class="form-todo">
+                            <span>Type the important words: tri-colour rat terrier</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
     </body>
 </html>
+
